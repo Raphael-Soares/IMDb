@@ -1,7 +1,6 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import { Noto_Sans } from "next/font/google";
-
-const font = Noto_Sans({ subsets: ["latin"], weight: "800" });
 
 export const metadata = {
     title: "IMDb clone",
@@ -11,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={font.className}>{children}</body>
+            <body>
+                <Header />
+
+                {children}
+            </body>
         </html>
     );
 }
