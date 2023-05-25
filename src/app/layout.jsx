@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import { Noto_Sans } from "next/font/google";
 import Providers from "./Providers";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
     title: "IMDb clone",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
             <body>
                 <Providers>
                     <Header />
-
+                    <Navbar />
                     {children}
                 </Providers>
             </body>
