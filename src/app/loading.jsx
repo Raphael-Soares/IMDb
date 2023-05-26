@@ -1,9 +1,7 @@
-import React from "react";
-
-export default function Loading() {
+export default function loading() {
     return (
-        <div className="flex justify-center ">
-            <img src="spinner.svg" alt="loading..." className="h-22"></img>
+        <div className="flex justify-center">
+            <img className="h-96" src="spinner.svg" alt="loading..." />
         </div>
     );
 }
