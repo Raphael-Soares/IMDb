@@ -3,6 +3,7 @@ import "./globals.css";
 import { Noto_Sans } from "next/font/google";
 import Providers from "./Providers";
 import Navbar from "@/components/Navbar";
+import SearchBox from "@/components/SearchBox";
 
 export const metadata = {
     title: "IMDb clone",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
                 <Providers>
                     <Header />
                     <Navbar />
+                    <SearchBox />
                     {children}
                 </Providers>
             </body>
